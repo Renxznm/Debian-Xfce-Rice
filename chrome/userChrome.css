@@ -1,0 +1,38 @@
+/* --- FIREFOX MINIMALIST ARC DARK --- */
+
+/* 1. Ilangin Garis Border di Bawah Tab Bar */
+#navigator-toolbox {
+    border-bottom: none !important;
+    background-color: #2f343f !important; /* Warna Gelap XFCE */
+}
+
+/* 2. Bikin Tab Bar Lebih Tipis & Rapi */
+:root {
+    --tab-min-height: 28px !important;
+    --tab-border-radius: 4px !important;
+}
+
+/* 3. Ilangin Title Bar Windows (Biar gak dobel sama XFCE) */
+#TabsToolbar {
+    visibility: collapse !important;
+    margin-bottom: -2px !important; 
+}
+/* KECUALI kalau lu mau liat tab, hapus bagian nomor 3 ini. */
+/* TAPI kalau lu mau "Compact Mode" ala Arc Browser: */
+#titlebar {
+    appearance: none !important;
+    background-color: #2f343f !important;
+}
+
+/* 4. Hapus Garis Fokus di URL Bar */
+#urlbar {
+    box-shadow: none !important;
+    border: none !important;
+    background-color: #404552 !important; /* Abu-abu agak terang */
+}
+
+/* 5. Sidebar (Kalau pake) biar gelap */
+#sidebar-box {
+    background-color: #2f343f !important;
+    border-right: 1px solid #1c1f26 !important;
+}
